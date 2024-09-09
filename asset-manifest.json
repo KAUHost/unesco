@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/unesco/static/css/main.6ace8b31.css",
-    "main.js": "/unesco/static/js/main.556ad68d.js",
+    "main.js": "/unesco/static/js/main.b7a94a13.js",
     "static/js/757.489b9bb8.chunk.js": "/unesco/static/js/757.489b9bb8.chunk.js",
     "static/js/920.09eb8829.chunk.js": "/unesco/static/js/920.09eb8829.chunk.js",
     "static/js/219.f2fd0931.chunk.js": "/unesco/static/js/219.f2fd0931.chunk.js",
@@ -19,10 +19,10 @@
     "static/media/button_up.svg": "/unesco/static/media/button_up.f8aacb9b9767db8ce3ffd2ebbce75738.svg",
     "index.html": "/unesco/index.html",
     "main.6ace8b31.css.map": "/unesco/static/css/main.6ace8b31.css.map",
-    "main.556ad68d.js.map": "/unesco/static/js/main.556ad68d.js.map"
+    "main.b7a94a13.js.map": "/unesco/static/js/main.b7a94a13.js.map"
   },
   "entrypoints": [
     "static/css/main.6ace8b31.css",
-    "static/js/main.556ad68d.js"
+    "static/js/main.b7a94a13.js"
   ]
 }
