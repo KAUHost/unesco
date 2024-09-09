@@ -1,0 +1,25 @@
+html{
+  --TS-color: #3178c6;
+  --SCSS-color: #c6538c;
+  --HTML-color: #e34c26;
+  --JS-color: #f1e05a;
+
+  --TS-percent: 56.7%;
+  --SCSS-percent: 33.7%;
+  --HTML-percent: 6.8%;
+}
+
+
+html[data-theme='dark'] {
+  --text-color: #ffffff;
+  --background-color: #292929;
+  --background-color-1: #3d3d3d;
+  --background-card-color: #1f1f1f;
+}
+
+html[data-theme='light'] {
+  --text-color: #252525;
+  --background-color: #c4c4c4;
+  --background-color-1: #ffffff;
+  --background-card-color: #a1a1a1;
+}

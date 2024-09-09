@@ -1,0 +1,131 @@
+@keyframes percent {
+	from {
+		opacity: 1;
+	}
+	to {
+		width: 0px;
+	}
+}
+
+@keyframes percent_bg {
+	0%{
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+footer {
+	width: 100vw;
+	min-height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	background-color: var(--background-color-1);
+
+	.link {
+		display: flex;
+		flex-direction: column;
+		& > div {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+
+	.percent {
+		z-index: 2;
+		padding:  0 15vw;
+		max-width: 50vw;
+		.percentage_bar {
+			height: 5px;
+			background-color: var(--JS-color);
+			display: flex;
+			overflow: hidden;
+			border-radius: 5px;
+			opacity: 0;
+			.ts {
+				width: var(--TS-percent);
+				background-color: var(--TS-color);
+				opacity: 0;
+			}
+			.scss {
+				width: var(--SCSS-percent);
+				background-color: var(--SCSS-color);
+				opacity: 0;
+			}
+			.html {
+				width: var(--HTML-percent);
+				background-color: var(--HTML-color);
+				opacity: 0;
+			}
+		}
+		.dots{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			a{
+				span{
+					span{
+						margin-left: 5px;
+						opacity: 0.5;
+						font-size: 0.8rem;
+					}
+				}
+			}
+		}
+		a {
+			div {
+				width: 0.8rem;
+				height: 0.8rem;
+				position: relative;
+				top: 0.9rem;
+				left: -1rem;
+				border-radius: 50%;
+			}
+			margin-left: 2rem;
+		}
+		.TS {
+			div {
+				background-color: var(--TS-color);
+			}
+		}
+		.SCSS {
+			div {
+				background-color: var(--SCSS-color);
+			}
+		}
+		.HTML {
+			div {
+				background-color: var(--HTML-color);
+			}
+		}
+		.JS {
+			div {
+				background-color: var(--JS-color);
+			}
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--text-color);
+	}
+
+	&.animate {
+		.ts {
+			animation: percent 0.7s linear forwards reverse;
+		}
+		.scss {
+			animation: percent 0.7s linear forwards reverse;
+		}
+		.html {
+			animation: percent 0.7s linear forwards reverse;
+		}
+		.percentage_bar {
+			animation: percent_bg 0.7s linear forwards;
+		}
+	}
+}

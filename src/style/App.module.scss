@@ -1,0 +1,41 @@
+@keyframes button_up {
+	0%, 50%, 100% {
+	  bottom: 0px;
+	}
+	12%, 62%, 87% {
+	  bottom: 7px;
+	}
+	25%, 75% {
+	  bottom: -7px;
+	}
+  }
+  
+  .button_up {
+	position: fixed;
+	height: 60px;
+	width: 100px;
+	right: -50px;
+	bottom: 22px;
+	background-color: var(--background-color-1);
+	border: none;
+	border-radius: 5px;
+  
+	img, svg {
+	  width: 40px;
+	}
+  
+	svg {
+	  position: relative;
+	  right: 25px;
+	  transform: rotate(180deg);
+	  fill: var(--text-color);
+	  animation: none;
+	}
+  
+	@media (hover: hover) {
+	  &:hover svg {
+		animation: button_up 1.5s linear infinite;
+	  }
+	}
+  }
+  
